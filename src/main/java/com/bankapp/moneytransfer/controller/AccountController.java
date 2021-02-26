@@ -43,7 +43,7 @@ class AccountController {
         return "{\"success\":1}";
     }
 
-    @PostMapping(value = "login")
+    @PostMapping(value = "/login")
     public Long loginResponseObject(@RequestBody Account account){
         Account account1 = accountService.getAccountLogin(account.getusername(), account.getPassword());
         return account1.getId();

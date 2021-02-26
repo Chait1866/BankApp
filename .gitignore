@@ -141,3 +141,4 @@ Desktop.ini
 .eslintcache
 
 src\main\resources\application.properties
+*.properties
