@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3 SMC</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkforlogin()" on>
+
+    <!-- Navbar Start -->
+
+    <nav class="navbar is-danger" role="navigation" aria-label="main navigation">
+      
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="viewbalance.html">
+            View Balance
+          </a>
+    
+          <a class="navbar-item" href="transfer.html">
+            Transfer Money
+          </a>
+
+          <a class="navbar-item" onclick="logout()">
+            Logout
+          </a>
+    
+        </div>
+    
+      </div>
+    </nav>
+
+    <!-- Navbar End -->
+
+
+
+      <button class="button is-info" style="margin-top: 30px; margin-left: 700px;"  type="button" id="buttonx" onclick="getBalance()">View balance</button>
+      
+      <div class="container" style="text-align: center; margin-top: 100px;" id="Data">
+
+            <h1 id="balancediv" style="display: none;">Your Balance is </h1>
+
+              <div id="showBalanceHere">
+    
+              </div>
+        </div>
+
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3 SMC</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar Start -->
+
+    <!-- <nav class="navbar is-danger" role="navigation" aria-label="main navigation">
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+
+            <a class="navbar-item" href="login.html">
+              View Balance
+            </a>
+
+            <a class="navbar-item" href="viewbalance.html">
+              View Balance
+            </a>
+      
+            <a class="navbar-item" href="transfer.html">
+              Transfer Money
+            </a>
+
+            <a class="navbar-item"  href="register.html">
+                Register
+              </a>
+      
+          </div>
+      
+        </div>
+      </nav> -->
+
+    <!-- Navbar End -->
+
+
+    <div class="container" style="max-width: 600px; margin-top: 100px; ">
+    
+        <div class="field">
+        <label class="label">Username</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Username" id="Username" name="Username">
+        </div>
+        <p class="help">Enter Your Username</p>
+      </div>
+
+      <div class="field">
+        <label class="label">Password</label>
+        <div class="control">
+          <input class="input" placeholder="Password" type="password" id="Password" name="password">
+        </div>
+        <p class="help">Enter your password</p>
+      </div>
+
+      <div class="field">
+        <label class="label">Re-enter your Password</label>
+        <div class="control">
+          <input class="input" placeholder="Password" type="password" id="rePassword" name="password">
+        </div>
+        <p class="help">Enter your password again</p>
+      </div>
+
+
+      <button class="button is-info" type="button" id="buttonx" onclick="getregisterdata()">Register</button>
+    </div>
+    
+    <div style="text-align: center;" id="response">
+          <div id="showResponseHere">
+          </div>
+    </div>
+
+
+</body>
+</html>
